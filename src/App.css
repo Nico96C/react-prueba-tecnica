@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: system-ui;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: antiquewhite;
+}
+
+section img {
+    max-width: 320px;
+    height: auto;
+}
+
+h1 {
+    color: #e27a3e;
+
+    border: #000;
+    background-color: antiquewhite;
+}
+
+button{
+    display: flex;
+    font-family: fantasy;
+}
+
+.fade-enter{
+    opacity: 0;
+}
+
+.fade-exit{
+    opacity: 1;
+}
+
+.fade-enter-active{
+    opacity: 1;
+}
+
+.fade-exit-active{
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-exit-active{
+    transition: opacity 500ms;
+}
